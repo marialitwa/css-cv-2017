@@ -1,0 +1,369 @@
+/* FARBPALETTE:
+#8D99AE - Graublau
+#e9a81c - Orangegelb
+#eee6e3 - blass Rosa
+#333333 - Darkdark grey
+#bd4c75 - Beere
+whitesmoke - Hellgrau/Body
+#798a69 - Grün
+
+ 
+/* FONTS:
+font-family: 'Asap Condensed', sans-serif;
+font-family: 'Rationale', sans-serif;
+font-family: 'Exo 2', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+
+/* 
+* {border: 1px solid black;}
+*/
+
+
+/* GLOBAL STYLES 
+------------------------------------*/
+
+
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    background: #bd4c75;
+    font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: #333;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+h1,
+h2 {
+    font-family: 'Rationale', Helvetica, Arial, sans-serif;
+}
+h1 {
+    font-size: 70px;
+    font-weight: 400;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 0;
+}
+h3 {
+    margin: 0px;
+}
+a {
+    color: #bd4c75;
+    font-weight: 500;
+    text-decoration: underline;
+}
+a:hover {
+    color: chartreuse;
+    text-decoration: underline;
+    font-weight: 500;
+}
+a:visited {
+    text-decoration: line-through;
+}
+.content-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 30px 20px;
+    overflow: auto;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.btn {
+    color: whitesmoke;
+    text-decoration: none;
+    background: #bd4c75;
+    padding: 15px 20px;
+    margin-left: 10px;
+    border-radius: 2px;
+}
+.aufzaehlung {
+    list-style: circle;
+}
+#trennlinie-plus {
+    margin: 0;
+    transform: rotate(2deg);
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+#trennlinie-minus {
+    margin: 0;
+    transform: rotate(-2deg);
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+/* ALTERNATIVE HR-STYLES, TRENNLINIE
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+*/
+
+
+
+
+
+/* HEADER & FOOTER 
+------------------------------------*/
+
+header,
+footer {
+    background: #333;
+    z-index: 2;
+}
+/* HEADER */
+
+header {
+    padding-top: 50px;
+    position: relative;
+    width: 100%;
+}
+.profile-img {
+    border-radius: 50%;
+}
+header h1,
+header h2 {
+    color: #eee6e3;
+    margin: 0;
+    margin-left: 30px;
+}
+header p {
+    margin-left: 30px;
+}
+header p {
+    color: #eee6e3;
+}
+.header-diagonale {
+    background: #333;
+    margin: -40px;
+    transform: rotate(-2deg);
+    border: 0;
+    height: 1px;
+    width: 150%;
+    padding: 30px;
+    position: relative;
+}
+
+/* FOOTER */
+
+.footer-diagonale {
+    background: #333;
+    margin: -40px;
+    transform: rotate(2deg);
+    border: 0;
+    height: 1px;
+    width: 150%;
+    padding: 30px;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    margin-top: -50px;
+}
+.contact-info a {
+    padding: 5px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 20px;
+}
+footer h2 {
+    color: #eee6e3;
+}
+
+.fa-facebook,
+.fa-bolt,
+.fa-linkedin,
+.fa-xing,
+.fa-vimeo,
+.fa-instagram,
+.fa-mobile,
+.fa-paper-plane-o {
+    color: #bd4c75;
+    font-size: 1.5em;
+}
+
+
+.fa-facebook:hover,
+.fa-bolt:hover,
+.fa-linkedin:hover,
+.fa-xing:hover,
+.fa-vimeo:hover,
+.fa-instagram:hover,
+.fa-mobile:hover,
+.fa-envelope:hover,
+.fa-paper-plane-o:hover {
+    color: chartreuse;
+}
+
+
+.fa-mobile,
+.fa-envelope {
+  font-size: 1.5em;
+
+}
+footer p {
+    color: gray;
+    font-size: 12px;
+    text-align: right;
+}
+.copyright {
+    margin: 5px;
+    bottom: 1px;
+    right: 0;
+    font-size: 12px;
+    color: gray;
+    position: absolute;
+}
+
+
+
+
+
+
+
+/* NAVIGATION 
+------------------------------------*/
+
+nav {
+    text-align: center;
+    font-weight: 300;
+    background: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+/* BERUFLICHE STATIONEN
+------------------------------------*/
+
+.work {
+    background: whitesmoke;
+    padding: 30px 0 60px;
+    margin-top: 30px;
+}
+h3 ~ p {
+    margin: 0;
+}
+.job-description {
+    margin-bottom: 25px;
+}
+.job-description p first-of-type {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+/* STUDIUM & WORKSHOPS
+------------------------------------*/
+
+.education {
+    background: whitesmoke;
+    text-align: right;
+    padding: 0 0 60px;
+    /*
+    background: linear-gradient(rgba(239, 35, 60, 0.8), rgba(239, 35, 60, 0.5)),
+                url(../images/koeln.png) no-repeat fixed;
+    background-size: cover;
+*/
+}
+p + h3 {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+/* SKILLS
+------------------------------------ */
+
+.skills {
+    background: whitesmoke;
+    padding-bottom: 100px;
+}
+.einzeiler {
+    display: inline;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES
+------------------------------------*/
+
+@media (min-width: 900px) {
+    .col-narrow {
+        width: 30%;
+        float: left;
+    }
+    .col-wide {
+        width: 70%;
+        float: left;
+        padding-left: 20px;
+    }
+}
+@media (max-width: 899px) {
+    header {
+        text-align: center;
+    }
+    .profile-img {
+        width: 200px;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 479px) {
+    header {
+        text-align: center;
+    }
+    .profile-img {
+        width: 200px;
+        margin-top: 50px;
+    }
+}
+.clearfix:after {
+    content: " ";
+    /* Older browser do not support empty content */
+    
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
